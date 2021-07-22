@@ -32,7 +32,7 @@ if '%errorlevel%' NEQ '0' (
 
 REM UNINSTALL SCRIPT-----------------------------------------------------------------------------------------------------
 REM If you are looking to add applications to this list, search the registry for the string that is listed in the Programs and Features menu until you find the "UninstallString"
-REM There may be multiple uninstall strings for the same application, add all of them here.
+REM There may be multiple uninstall strings for the same application, add all of them here. As the dell applications are udpated over time, the applicationID can change.
 REM Once you find the "UninstallString", you'll need to add the proper flags so that the uninstaller runs silently, usually that is either "/quiet", "/s", "/silent", or "2> nul"
 REM Once you have the "UninstallString" + the flag, add it below.
 
