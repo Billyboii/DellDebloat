@@ -79,7 +79,7 @@ MsiExec.exe /I{795931D8-2EBF-4969-A678-4219B161F676} /quiet
 
 REM Dell SupportAssist
 echo "Uninstalling Dell SupportAssist..."
-"C:\Program Files\Dell\SupportAssistAgent\bin\SupportAssistUninstaller.exe" /S 2>nul
+"C:\Program Files\Dell\SupportAssistAgent\bin\SupportAssistUninstaller.exe" /S 2> nul
 "C:\ProgramData\Package Cache\{555298fa-14a9-48f2-a7a0-9602f31785da}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
 "C:\ProgramData\Package Cache\{ec40a028-983b-4213-af2c-77ed6f6fe1d5}\DellUpdateSupportAssistPlugin.exe" /uninstall /quiet 2> nul
 MsiExec.exe /X{3A0ECCB6-1034-440E-8672-C4E14CCB7689} /quiet
