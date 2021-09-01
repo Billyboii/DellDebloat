@@ -44,7 +44,7 @@ MsiExec.exe /X{4CCADC13-F3AE-454F-B724-33F6D4E52022} /quiet
 MsiExec.exe /X{EC542D5D-B608-4145-A8F7-749C02BE6D94} /quiet
 
 REM Dell Update
-echo "Uninstalling Dell Update...
+echo "Uninstalling Dell Update..."
 MsiExec.exe /I{D8AE5F9D-647C-49B4-A666-1C20B44EC0E1} /quiet
 
 REM Dell Update for Windows 10
