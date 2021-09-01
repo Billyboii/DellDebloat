@@ -61,7 +61,7 @@ MsiExec.exe /I{693A23FB-F28B-4F7A-A720-4C1263F97F43} /quiet
 
 REM Dell Optimizer Service
 echo "Uninstalling Dell Optimizer Service..."
-"C:\Program Files (x86)\InstallShield Installation Information\{286A9ADE-A581-43E8-AA85-6F5D58C7DC88}\DellOptimizer.exe" -remove -runfromtemp -silent
+"C:\Program Files (x86)\InstallShield Installation Information\{286A9ADE-A581-43E8-AA85-6F5D58C7DC88}\DellOptimizer.exe" -remove -runfromtemp -silent 2> nul
 
 REM Dell Update - SupportAssist Update Plugin
 echo "Uninstalling Dell Update - SupportAssist Update Plugin..."
