@@ -32,6 +32,7 @@ if '%errorlevel%' NEQ '0' (
 
 REM UNINSTALL SCRIPT-----------------------------------------------------------------------------------------------------
 REM If you are looking to add applications to this list, search the registry for the string that is listed in the Programs and Features menu until you find the "UninstallString"
+REM These usually can be found in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\ and then the SID\Product folders.
 REM There may be multiple uninstall strings for the same application, add all of them here. As the dell applications are updated over time, the applicationID can change.
 REM Once you find the "UninstallString", you'll need to add the proper flags so that the uninstaller runs silently, usually that is either "/quiet", "/s", "/silent", or "2> nul"
 REM Once you have the "UninstallString" + the flag, add it below.
@@ -40,6 +41,15 @@ REM Dell Command | Update for Windows 10
 echo "Uninstalling Dell Command | Update for Windows 10..."
 MsiExec.exe /X{5669AB71-1302-4412-8DA1-CB69CD7B7324} /quiet
 MsiExec.exe /X{4CCADC13-F3AE-454F-B724-33F6D4E52022} /quiet
+MsiExec.exe /X{EC542D5D-B608-4145-A8F7-749C02BE6D94} /quiet
+
+REM Dell Update
+echo "Uninstalling Dell Update...
+MsiExec.exe /I{D8AE5F9D-647C-49B4-A666-1C20B44EC0E1} /quiet
+
+REM Dell Update for Windows 10
+echo "Uninstalling Dell Update for Windows 10..."
+MsiExec.exe /X{70E9F8CC-A23E-4C25-B292-C86C1821587C} /quiet
 
 REM Dell Digital Delivery Services
 echo "Uninstalling Dell Digital Delivery Services..."
@@ -47,6 +57,7 @@ MsiExec.exe /X{CC5730C7-C867-43BD-94DA-00BB3836906F} /quiet
 MsiExec.exe /I{66E2407E-9001-483E-B2AA-7AEF97567143} /quiet
 MsiExec.exe /X{81C48559-E2EB-4F18-9854-51331B9DB552} /quiet
 MsiExec.exe /X{3722784A-D530-4C82-BB78-4DF3E1A4CAD9} /quiet
+MsiExec.exe /I{693A23FB-F28B-4F7A-A720-4C1263F97F43} /quiet
 
 REM Dell Optimizer Service
 echo "Uninstalling Dell Optimizer Service..."
@@ -97,9 +108,13 @@ REM Dell Power Manager Service
 echo "Uninstalling Dell Power Manager Service..."
 MsiExec.exe /X{18469ED8-8C36-4CF7-BD43-0FC9B1931AF8} /quiet
 
-REM Dell Update for Windows 10
-echo "Uninstalling Dell Update for Windows 10..."
-MsiExec.exe /X{70E9F8CC-A23E-4C25-B292-C86C1821587C} /quiet
+REM Dell Foundation Services
+echo "Uninstalling Dell Foundation Services..."
+MsiExec.exe /X{BDB50421-E961-42F3-B803-6DAC6F173834} /quiet
+
+REM Dell Protected Workspace
+echo "Uninstalled Dell Protected Workspace..."
+MsiExec.exe /X{E2CAA395-66B3-4772-85E3-6134DBAB244E} /quiet
 
 REM Microsoft Office 365 - en-us
 echo "Uninstalling Microsoft Office 365 - en-us..."
