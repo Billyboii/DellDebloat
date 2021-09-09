@@ -32,7 +32,10 @@ if '%errorlevel%' NEQ '0' (
 
 REM UNINSTALL SCRIPT-----------------------------------------------------------------------------------------------------
 REM If you are looking to add applications to this list, search the registry for the string that is listed in the Programs and Features menu until you find the "UninstallString"
-REM These usually can be found in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\ and then the SID\Product folders.
+REM These usually can be found in:
+REM HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\ and then the SID\Product folders.
+REM HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\
+REM HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall
 REM There may be multiple uninstall strings for the same application, add all of them here. As the dell applications are updated over time, the applicationID can change.
 REM Once you find the "UninstallString", you'll need to add the proper flags so that the uninstaller runs silently, usually that is either "/quiet", "/s", "/silent", or "2> nul"
 REM Once you have the "UninstallString" + the flag, add it below.
@@ -42,6 +45,7 @@ echo "Uninstalling Dell Command | Update for Windows 10..."
 MsiExec.exe /X{5669AB71-1302-4412-8DA1-CB69CD7B7324} /quiet
 MsiExec.exe /X{4CCADC13-F3AE-454F-B724-33F6D4E52022} /quiet
 MsiExec.exe /X{EC542D5D-B608-4145-A8F7-749C02BE6D94} /quiet
+MsiExec.exe /X{41D2D254-D869-4CD8-B440-5DF49083C4BA} /quiet
 
 REM Dell Update
 echo "Uninstalling Dell Update..."
@@ -58,6 +62,7 @@ MsiExec.exe /I{66E2407E-9001-483E-B2AA-7AEF97567143} /quiet
 MsiExec.exe /X{81C48559-E2EB-4F18-9854-51331B9DB552} /quiet
 MsiExec.exe /X{3722784A-D530-4C82-BB78-4DF3E1A4CAD9} /quiet
 MsiExec.exe /I{693A23FB-F28B-4F7A-A720-4C1263F97F43} /quiet
+MsiExec.exe /X{560DFD4A-23E2-45DD-A223-A4B3FA356913} /quiet
 
 REM Dell Optimizer Service
 echo "Uninstalling Dell Optimizer Service..."
@@ -89,6 +94,7 @@ MsiExec.exe /I{C4EF62FF-E6B9-4CE8-A514-1DDA49CB0C47} /quiet
 MsiExec.exe /I{795931D8-2EBF-4969-A678-4219B161F676} /quiet
 "C:\ProgramData\Package Cache\{a0d5bbde-c013-48ba-b98a-ca0ff5cf36a6}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
 MsiExec.exe /I{10B1BCF9-4996-4270-A12D-1B1BFEEF979C} /quiet
+MsiExec.exe /I{61A1B864-0DAF-45A4-8184-5A0D347803B1} /quiet
 
 REM Dell SupportAssist
 echo "Uninstalling Dell SupportAssist..."
@@ -97,6 +103,7 @@ echo "Uninstalling Dell SupportAssist..."
 "C:\ProgramData\Package Cache\{ec40a028-983b-4213-af2c-77ed6f6fe1d5}\DellUpdateSupportAssistPlugin.exe" /uninstall /quiet 2> nul
 MsiExec.exe /X{3A0ECCB6-1034-440E-8672-C4E14CCB7689} /quiet
 MsiExec.exe /X{5106801D-CA18-4173-85B9-D74C33358F7F} /quiet
+MsiExec.exe /X{9EF0AEB0-9AD2-40E6-8667-D7520C508941} /quiet
 
 REM Dell SupportAssist OS Recovery Plugin for Dell Update
 echo "Uninstalling Dell SupportAssist OS Recovery Plugin for Dell Update..."
