@@ -129,14 +129,14 @@ REM Dell Protected Workspace
 echo "Uninstalled Dell Protected Workspace..."
 MsiExec.exe /X{E2CAA395-66B3-4772-85E3-6134DBAB244E} /quiet
 
-REM Microsoft Office 365 - en-us
+REM Microsoft 365 - en-us
 echo "Uninstalling Microsoft Office 365 - en-us..."
 "C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe" scenario=install scenariosubtype=ARP sourcetype=None productstoremove=O365HomePremRetail.16_en-us_x-none culture=en-us version.16=16.0 DisplayLevel=False 2>nul
 
-REM Microsoft Office 365 - es-es
+REM Microsoft 365 - es-es
 echo "Uninstalling Microsoft Office 365 - es-es..."
 "C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe" scenario=install scenariosubtype=ARP sourcetype=None productstoremove=O365HomePremRetail.16_es-es_x-none culture=es-es version.16=16.0 DisplayLevel=False 2>nul
 
-REM Microsoft Office 365 - fr-fr
+REM Microsoft 365 - fr-fr
 echo "Uninstalling Microsoft Office 365 - fr-fr..."
 "C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe" scenario=install scenariosubtype=ARP sourcetype=None productstoremove=O365HomePremRetail.16_fr-fr_x-none culture=fr-fr version.16=16.0 DisplayLevel=False 2>nul
