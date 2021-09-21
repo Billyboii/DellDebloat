@@ -99,6 +99,8 @@ MsiExec.exe /I{795931D8-2EBF-4969-A678-4219B161F676} /quiet
 "C:\ProgramData\Package Cache\{555298fa-14a9-48f2-a7a0-9602f31785da}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
 MsiExec.exe /I{6B991B44-B938-4902-BDF3-186CBDC62AD3} /quiet
 "C:\ProgramData\Package Cache\{34685541-a19e-4537-97c9-082238790346}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
+MsiExec.exe /I{61A1B864-0DAF-45A4-8184-5A0D347803B1} /quiet
+"C:\ProgramData\Package Cache\{346eb8e9-af99-485f-b39d-89717cb78f11}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
 
 REM Dell SupportAssist
 echo "Uninstalling Dell SupportAssist..."
@@ -116,6 +118,9 @@ MsiExec.exe /I{900D0BCD-0B86-4DAA-B639-89BE70449569} /quiet
 MsiExec.exe /I{6DD27BB4-C350-414B-BC25-D33246605FB2} /quiet
 MsiExec.exe /I{900D0BCD-0B86-4DAA-B639-89BE70449569} /quiet
 "C:\ProgramData\Package Cache\{ec40a028-983b-4213-af2c-77ed6f6fe1d5}\DellUpdateSupportAssistPlugin.exe" /uninstall /quiet 2> nul
+MsiExec.exe /I{A713BCAE-ED3C-43BA-834A-8D1E8773FF2C} /quiet
+"C:\ProgramData\Package Cache\{b07a0d04-06d6-445c-ae24-7ae9991f11aa}\DellUpdateSupportAssistPlugin.exe" /uninstall /quiet 2> nul
+
 
 REM Dell Power Manager Service
 echo "Uninstalling Dell Power Manager Service..."
