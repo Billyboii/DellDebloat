@@ -110,6 +110,7 @@ echo "Uninstalling Dell SupportAssist..."
 MsiExec.exe /X{3A0ECCB6-1034-440E-8672-C4E14CCB7689} /quiet
 MsiExec.exe /X{5106801D-CA18-4173-85B9-D74C33358F7F} /quiet
 MsiExec.exe /X{9EF0AEB0-9AD2-40E6-8667-D7520C508941} /quiet
+MsiExec.exe /X{71A59A4C-9348-4CA2-B98C-E422E14C9D31} /quiet
 
 REM Dell SupportAssist OS Recovery Plugin for Dell Update
 echo "Uninstalling Dell SupportAssist OS Recovery Plugin for Dell Update..."
