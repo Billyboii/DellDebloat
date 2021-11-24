@@ -101,6 +101,9 @@ MsiExec.exe /I{6B991B44-B938-4902-BDF3-186CBDC62AD3} /quiet
 "C:\ProgramData\Package Cache\{34685541-a19e-4537-97c9-082238790346}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
 MsiExec.exe /I{61A1B864-0DAF-45A4-8184-5A0D347803B1} /quiet
 "C:\ProgramData\Package Cache\{346eb8e9-af99-485f-b39d-89717cb78f11}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
+MsiExec.exe /I{E21419F5-2AA6-439C-B2C1-840083A05BC5} /quiet
+"C:\ProgramData\Package Cache\{db72dcd5-bf99-4888-b104-cb605b82ec8a}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
+
 
 REM Dell SupportAssist
 echo "Uninstalling Dell SupportAssist..."
@@ -111,6 +114,7 @@ MsiExec.exe /X{3A0ECCB6-1034-440E-8672-C4E14CCB7689} /quiet
 MsiExec.exe /X{5106801D-CA18-4173-85B9-D74C33358F7F} /quiet
 MsiExec.exe /X{9EF0AEB0-9AD2-40E6-8667-D7520C508941} /quiet
 MsiExec.exe /X{71A59A4C-9348-4CA2-B98C-E422E14C9D31} /quiet
+MsiExec.exe /I{E21419F5-2AA6-439C-B2C1-840083A05BC5} /quiet
 
 REM Dell SupportAssist OS Recovery Plugin for Dell Update
 echo "Uninstalling Dell SupportAssist OS Recovery Plugin for Dell Update..."
