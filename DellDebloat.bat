@@ -103,6 +103,8 @@ MsiExec.exe /I{61A1B864-0DAF-45A4-8184-5A0D347803B1} /quiet
 "C:\ProgramData\Package Cache\{346eb8e9-af99-485f-b39d-89717cb78f11}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
 MsiExec.exe /I{E21419F5-2AA6-439C-B2C1-840083A05BC5} /quiet
 "C:\ProgramData\Package Cache\{db72dcd5-bf99-4888-b104-cb605b82ec8a}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
+MsiExec.exe /I{28C1FA1E-C3B3-4257-A3F2-059EEA260C64} /quiet
+"C:\ProgramData\Package Cache\{0b3f567c-a2ee-437a-861f-bb6da9f2111b}\DellSupportAssistRemediationServiceInstaller.exe" /uninstall /quiet 2> nul
 
 
 REM Dell SupportAssist
